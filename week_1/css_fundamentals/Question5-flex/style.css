@@ -16,35 +16,25 @@ body {
 }
 
 .one, .two, .three, .four, .five, .six {
-    flex-grow: 1; 
-    margin: 10px; 
+    margin: 10px;
     border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.one,
-.two,
-.three,
-.four,
-.five,
-.six {
     background-color: white;
-    padding: 10px; 
-    height: 200px; 
-    width: 200px; 
+    padding: 10px;
+    height: 200px;
+    width: 200px;
     flex-direction: column;
-    
 }
+
 .two img{
     background-color: white;
     top:50px;
     max-width: 200px;
     max-height: 140px;
     margin-top: -9px;
-   
+
 
 }
 .one img,
@@ -57,11 +47,11 @@ body {
     max-width: 200px;
     max-height: 140px;
     margin-top: -9px;
-   
-    
+
+
 }
  p {
    top:-10px;
-    margin: 1px; 
+    margin: 1px;
     font-family:cursive;
 }
