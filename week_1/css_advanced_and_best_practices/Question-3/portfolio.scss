@@ -1,0 +1,133 @@
+// variables
+$primary-color: #e74c3c;
+$secondary-color: #c0392b;
+$text-color: #333;
+$link-color: #fff;
+$background-color: #333;
+
+//mixins
+@mixin description-para {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+@mixin button-style {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+@mixin heading-style($font-size, $color, $margin-bottom) {
+  font-size: $font-size;
+  color: $color;
+  margin-bottom: $margin-bottom;
+}
+
+// header part
+.header {
+  background-color: $background-color;
+  color: $link-color;
+  padding: 1rem;
+  text-align: center;
+
+  &__title {
+    @include heading-style(2.5rem, $link-color, 0);
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+
+      &__item {
+        display: inline-block;
+        margin-right: 1rem;
+
+        &__src {
+          color: $link-color;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// main part
+.main {
+  padding: 2rem;
+
+  &__title {
+    @include heading-style(2rem, $text-color, 1rem);
+  }
+
+  &__description {
+   @include description-para;
+  }
+
+// project part
+  .project {
+    margin-bottom: 2rem;
+
+    &__image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    &__title {
+      @include heading-style(2rem, $text-color, 0.5rem);
+    }
+
+    &__description {
+      @include description-para;
+    }
+  }
+}
+// contact part
+.contact {
+  &__title {
+    @include heading-style(2rem, $text-color, 1rem);
+  }
+
+  &__form {
+    &--label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: $text-color;
+    }
+
+    &--input,
+    &--textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    &--textarea {
+      resize: vertical;
+    }
+
+    &--button {
+      @include button-style;
+    }
+  }
+}
+// footer part
+.footer {
+  &__copyright {
+    color: $text-color;
+  }
+}
