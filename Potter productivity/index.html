@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Space+Grotesk&family=Days+One&family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <!--Whole design container--> <!--border border-white -->
+    <design class="container mx-auto p-8 flex flex-col bg-gray-900">
+      <!--Header section-->
+      <header class="header bg-gray-900 w-full h-[600px] p-10  bg-no-repeat  bg-center bg-fixed " style=" background-image: url('hogwarts\ entering.jpg'); ">
+        <div
+          class="header__content flex flex-col h-[500px] p-2 gap-8 "
+        >
+          <icon class="header__icon  w-20 h-20  ml--4.5">
+            <img src="platform.png" class="w-full h-full object-cover rounded-full">
+          </icon>
+          <style>
+            .eagle-lake-text {
+              font-family: 'Eagle Lake', cursive;
+            }
+          </style>
+          <h1 class= "eagle-lake-text text-5xl header__heading w-[550px] h-2/4 text-white ">
+            Welcome to the magic world of Productivity!
+          </h1>
+          <style>
+            .space-grotesk {
+              font-family: 'Space Grotesk', sans-serif;
+            }
+          </style>
+          
+          <button class="rounded-lg bg-yellow-500 header__button border-4 border-yellow-700  hover:border-double w-48 h-10 space-grotesk">Begin your journey</button>
+        </div>
+      </header>
+      <!--concept section-->
+      <concept class="concept relative w-full h-[500px] bg-cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('wand.jpg');">
+        
+      
+      
+        <div class=" concept__container flex flex-row h-[500px]  p-2 gap-2 ">
+          
+          <div class="flex flex-col w-[650px] ">
+            <style>
+              .font-creepster {
+                font-family: 'Creepster', 'cursive';
+              }
+            </style>
+            <h3 class=" text-white font-creepster text-5xl concept__h3 h-1/4  p-2">Conquer Your Tasks</h3>
+            
+            
+            <p1 class="text-white space-grotesk text-1xl concept__p1 h-[100px] ">Step into the enchanting world of Wizard Study Timer, where we've harnessed the essence of successful learning methods and engaging productivity tools.</p1>
+            <p2 class=" text-white  space-grotesk concept__p1 h-[100px] ">Harness the power of Pomodoro spells to vanquish distractions and focus on what truly matters – learning.</p2>
+            <p3 class=" text-white space-grotesk concept__p1 h-[100px] ">Do not overlook, even wizards need a break! Indulge in a well-deserved respite with phrases that will charm away lingering irritation.</p3>
+          </div>
+          <div class="flex  w-[400px] ">
+  
+</div>
+
+          </div>
+        </div>
+        
+      </concept>
+      <!--action section-->
+      <action class="action bg-pink-50 w-full h-[250px] p-10 bg-cover" style="background-image: url('clouds.jpg');">
+        <div
+          class="action__content flex flex-col h-[200px] p-10"
+        >
+        <style>
+          .font-Barriecito{
+            font-family: 'Barriecito', cursive;
+          }
+          </style>
+          <h1
+            class="action__heading  w-3/4 h-[150px] font-Barriecito text-3xl mb-2"
+          >Venture outside your comfort zone. The rewards are worth it.</h1>
+          <click class="click flex flex-row p-1">
+            <button class="bg-zinc-100 button mr-2 space-grotesk w-[200px] border-4 border-sky-300 border-x-sky-700">
+              Start Studying
+            </button>
+            <button class=" bg-zinc-100 button border border-black space-grotesk w-[200px] border-4 border-indigo-300 border-x-indigo-700">Explore Features</button>
+          </click>
+        </div>
+      </action>
+      <!--Studyroom section-->
+      <studyroom class="studyroom bg-white w-full h-[400px] relative">
+        <studyroom__content class="studyroom__content flex flex-row border border-black p-2 gap-10">
+          <studyroom--music class="studyroom--music border border-black w-1/2 h-[370px]">
+            <div class="iframe p-5">
+             <div class="aspect-w-16 aspect-h-9">
+               <iframe class="w-full h-[250px]" src="https://www.youtube.com/embed/BQrxsyGTztM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
+            </div>
+         </studyroom--music>
+
+        
+         <studyroom--timer class="studyroom--timer border border-black w-1/2 h-[370px] flex flex-col p-5">
+          <timer__block class="timer__block border border-black  h-[250px]">
+            <div id="timer" class="text-3xl eagle-lake-text p-10">
+              <span id="hours">00:</span>
+              <span id="mins">00:</span>
+              <span id="seconds">00</span>  
+            </div>
+          </timer__block>
+          <buttons class="buttons flex flex-row p-1 gap-[20px] ">
+            <button1 id="startButton" class="text-white button mr-2 space-grotesk w-[100px] border border-black bg-green-500">
+              Start
+            </button1>
+            <button2 id="stopButton" class="text-white button mr-2 space-grotesk w-[100px] border border-black bg-red-500">
+              Stop
+            </button2>
+          </buttons>
+        </studyroom--timer>
+        </studyroom__content>
+      </studyroom>
+      
+    
+      <!--Features section-->
+      <features class="features bg-yellow-200 w-full h-[600px] p-10">
+        <div
+          class="features__content flex flex-row border border-black h-[500px] p-10 gap-10"
+        >
+          <div
+            class="features--tasks flex flex-col border border-black w-1/2 h-[450px] gap-1 p-1"
+          >
+            <tasks--image
+              class="border border-black w-full h-[300px]"
+            ></tasks--image>
+            <tasks--h2 class="border border-black h-[50px]">TaskMaster</tasks--h2>
+            <tasks--p class="border border-black h-[70px]">Elevate your productivity with seamless task management and efficient organization</tasks--p>
+          </div>
+          <div
+            class="features--tracker flex flex-col border border-black w-1/2 h-[450px] gap-1 p-1"
+          >
+            <tracker--image
+              class="border border-black w-full h-[300px]"
+            ></tracker--image>
+            <tracker--h2 class="border border-black h-[50px]">Time-Waste Tracker</tracker--h2>
+            <tracker--p class="border border-black h-[70px]">Watch out, The Time-Waste Tracker helps you reclaim productivity by identifying time-draining activities.</tracker--p>
+          </div>
+        </div>
+      </features>
+
+      <!--Reviews section-->
+      <reviews class="bg-green-400 w-full h-[400px] p-1">
+        <div
+          class="reviews--boxes flex flex-row border border-black h-[380px] p-10 gap-x-36"
+        >
+          <boxes
+            class="boxes__1 flex flex-col border border-black w-[250px] h-[300px] p-5 gap-2"
+          >
+            <boxes--image
+              class="border border-black w-[70px] h-[70px]"
+            ></boxes--image>
+            <boxes-h3 class="border border-black h-[150px]"></boxes-h3>
+            <boxes-p class="border border-black w-[150px] h-[30px]"></boxes-p>
+          </boxes>
+          <boxes
+            class="boxes__2 flex flex-col border border-black w-[250px] h-[300px] p-5 gap-2"
+          >
+            <boxes--image
+              class="border border-black w-[70px] h-[70px]"
+            ></boxes--image>
+            <boxes-h3 class="border border-black h-[150px]"></boxes-h3>
+            <boxes-p class="border border-black w-[150px] h-[30px]"></boxes-p>
+          </boxes>
+          <boxes
+            class="boxes__3 flex flex-col border border-black w-[250px] h-[300px] p-5 gap-2"
+          >
+            <boxes--image
+              class="border border-black w-[70px] h-[70px]"
+            ></boxes--image>
+            <boxes-h3 class="border border-black h-[150px]"></boxes-h3>
+            <boxes-p class="border border-black w-[150px] h-[30px]"></boxes-p>
+          </boxes>
+        </div>
+      </reviews>
+
+      <!--footer section-->
+      <footer class="bg-purple-300 h-[300px]">
+        <footer__container class="flex flex-col p-4 gap-2">
+          <info class="flex flex-row border border-black h-[200px]"> </info>
+          <credits class="border border-black h-[30px]"></credits>
+        </footer__container>
+      </footer>
+    </design>
+  </body>
+</html>
