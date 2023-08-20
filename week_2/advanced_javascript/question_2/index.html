@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center p-10 ">
+    <div class="container w-3/4 h-[500px] border border-black bg-purple-400 p-10">
+      <div class="accordion w-3/4 h-[400px] border border-white bg-white p-10 flex flex-col items-center rounded-lg">
+        <div class="refund w-[500px] p-3 rounded-lg">
+          <h1 class="accordion-header w-[450px] h-[50px] p-3 cursor-pointer flex items-center text-violet-700 text-2xl font-mono bg-purple-200 rounded-lg">
+            What is your refund policy?
+            <span class="accordion-arrow ml-auto transition-transform text-2xl">^</span>
+          </h1>
+          <p class="accordion-content p-3 hidden font-mono">
+            If you're happy with your purchase for any reason, email us within
+            90 days and we'll refund you in full, no questions asked.
+          </p>
+        </div>
+        <div class="refund w-[500px] p-3">
+          <h1 class="accordion-header w-[450px] h-[50px] p-3 cursor-pointer flex items-center text-violet-700 text-2xl font-mono bg-purple-200 rounded-lg">
+            Do you offer technical support?
+            <span class="accordion-arrow ml-auto transition-transform text-2xl">^</span>
+          </h1>
+          <p class="accordion-content p-3 hidden font-mono">
+            No.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
